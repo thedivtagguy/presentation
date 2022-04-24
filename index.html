@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <base href="https://mellifluous-crumble-4fde67.netlify.app/" target="_blank">
     <title>Web Dev Interest Group</title>
     <meta charset="utf-8" />
     <meta name="author" content="Aman Bhargava" />
+    <base href="https://mellifluous-crumble-4fde67.netlify.app/" target="_blank">
     <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
@@ -46,7 +46,7 @@ class: left, middle
 
 .pull-right[
 ### We Won't
-- Learn _all_ of CSS/HTML/JS. &lt;br/&gt; That's not realistic.
+- Learn _everything_ about CSS/HTML/JS. &lt;br/&gt; &lt;br/&gt; That's not realistic.
 ]
 ---
 class: inverse, center, middle
@@ -69,12 +69,6 @@ An HTML element is defined by a start tag, some content, and an end tag.
 
 .left[![:scale 80%](images/html-skeleton.png)]
 
----
-background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
-background-position: 50% 50%
-class: center, bottom, inverse
-
-# Tell me more
 
 ---
 
@@ -108,9 +102,9 @@ But Amannnnn, you ask, why can't I use `&lt;div&gt;` everywhere?
 
 # Developing for accessibility
 
-Not everyone browses websites like you do. Semantic HTML helps structure web pages in a way such that people with disabilities (and even those without) can still use them. 
+Not everyone browses websites like you do. Semantic HTML helps structure web pages in a way such that people with disabilities (and even those without. Even you!) can still use them. 
 
-While there's a lot of learn in accessibility, the only rule you need to keep in mind right now is
+While there's a lot of learn in accessibility, the only rule you need to keep in mind for now is
 
 ### A place for everything and everything in its place
 
@@ -123,6 +117,12 @@ While elements such as `&lt;form&gt;`, `&lt;table&gt;` and `&lt;article&gt;` cle
 
 
 The prior tags are non-semantic; the later tags are semantic.
+---
+background-image: url(https://github.com/yihui/xaringan/releases/download/v0.0.2/karl-moustache.jpg)
+background-position: 50% 50%
+class: center, bottom, inverse
+
+# Tell me more
 
 ---
 
@@ -176,6 +176,20 @@ CSS is all about targeting HTML elements that we write and styling them.  It is 
 .left[![:scale 80%](https://c.tenor.com/vr7gSfuJjQYAAAAd/breaking-bad-yeah-science.gif)]
 
 ---
+class: middle, center, inverse
+# Lets get codinggggg!
+---
+# Setting up your IDE
+
+Open up VSCode and install the following extension: 
+
+#### Live Server
+```
+https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+```
+This create a local server that will reload every time you save your file, so you can see what you're coding easily. 
+---
+
 class: inverse, middle, center
 
 # Take a sad site and make it sadder
@@ -198,15 +212,32 @@ Maybe this?
 
 .left[![](images/act1.png)]
 
-Anything really. Go.
 ---
 class: inverse, middle, center
 
-# Wait but how do I give you the file?
+# But how would I share this file for you to get started?
 
 ---
 
 ## I'm glad you asked. Let's Git to it. 
+
+Git is a version control system.  What this means is that it basically lets multiple people access a central source of what is usually code, and make alterations to it without messing it up for other people.
+
+In development, its used to collaborate between teams. This works in the following way: 
+
+1. There is a central code 'repository'. 
+
+2. Each member can then copy this main **branch** and create their own **fork**.
+
+3. If me and you are working on the same fork, it is better to create two copies of it and work on things separately. This is also a branch.
+
+4. Because we're able to save versions of our progress, if you screw up your branch, I can just tell Git 'Hey could you go back to the time before this monkey touched the code?' and continue working from there.
+
+---
+class: middle, center
+# We'll be learning Git thoroughly in a later session. &lt;br&gt; &lt;br&gt; For now, we'll just use some simple commands
+---
+![:scale 20%](https://www.statnews.com/wp-content/uploads/2016/07/DOLLY_BDAY_03-645x645.jpg)
 
 1. First, copy this link below:
 ```
@@ -221,9 +252,23 @@ https://github.com/thedivtagguy/activity1
 
 You just used Git to fetch from a remote source to your local machine! 
 
+##### _This slide is dedicated to Dolly the sheep, who was also a clone_
+---
 In the next part, we will launch this crap into space. First add some ✨ styles to the files.✨
+### Time: 10 Minutes
 
-#### Time: 10 Minutes
+
+#### Tips to make your life easier
+
+1. Enable a [split editor](https://code.visualstudio.com/docs/getstarted/userinterface#_side-by-side-editing) so you can edit two files side by side.
+
+
+![:scale 40%](https://code.visualstudio.com/assets/docs/getstarted/userinterface/sidebyside.png)
+
+2. Fire up your live server.
+
+![:scale 40%](https://github.com/ritwickdey/vscode-live-server/raw/HEAD/images/Screenshot/vscode-live-server-statusbar-3.jpg)
+
 
 ---
 
@@ -292,7 +337,8 @@ To host our website, we'll use a service called Netlify. It is a static site hos
 4. Click deploy
 
 In a few minutes, your website will be online with a silly looking URL. 
-
+--
+&lt;br&gt;
 But see, here's the cool part. Go back to VS Code and make some changes to the text. After you're done, create a new commit like so:
 ```js
 git add -A
