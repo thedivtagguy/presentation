@@ -5,11 +5,10 @@ author: "Aman Bhargava"
 date: "2022/04/24"
 base: "https://mellifluous-crumble-4fde67.netlify.app/"
 output:
-  html_document:
-      includes:
-         in_header: base.html
   xaringan::moon_reader:
     lib_dir: libs
+    includes:
+         in_header: base.html
     nature:
       highlightStyle: github
       highlightLines: true
