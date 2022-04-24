@@ -4,6 +4,13 @@
     <title>Web Dev Interest Group</title>
     <meta charset="utf-8" />
     <meta name="author" content="Aman Bhargava" />
+    <meta property="og:title" content="HTML > Git > Netlify | Web Dev Interest Group" />
+    <meta property="og:url" content="https://thedivtagguy.com/web-dev/1" />
+    <meta property="og:image" content="images/social.png" />
+    <meta name="twitter:title" content="HTML > Git > Netlify">
+    <meta name="twitter:description" content="Resource material on working with HTML, Git and Netlify for interest group session 1. ">
+    <meta name="twitter:image" content="images/social.png">
+    <meta name="twitter:card" content="summary_large_image">
     <base href="https://mellifluous-crumble-4fde67.netlify.app/" target="_blank">
     <script src="libs/header-attrs-2.13/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
@@ -217,9 +224,9 @@ class: inverse, middle, center
 
 # Hey Jude
 
-By the end of this short exercise, you will have a sh*tty website on the internet. Lets go. 
+By the end of this short exercise, you will have a crappy website on the internet. Lets go. 
 
-I have this stupid website: 
+I made this page: 
 
 .left[![:scale 80%](images/act1un.png)]
 
@@ -254,7 +261,7 @@ In development, its used to collaborate between teams. This works in the followi
 
 --
 
-3. If me and you are working on the same fork, it is better to create two copies of it and work on things separately. This is called a **branch**.
+3. If me and you are working on the same fork, it is better to create two copies of what we're working on and develop on things separately. Each copy here is called a **branch**.
 
 --
 
@@ -338,7 +345,7 @@ Open up a new terminal in VS Code. Type in the following code:
 ```js
 git init // This initializes a new git repository on your machine
 
-git add -A // Every time you want to save a new version, you have to add all files to this verion
+git add -A // Every time you want to save a new version, you have to add all files to this version
 
 git commit -m "My First Commit" // The commit command saves the version with a message to help you keep track of things
 ```
@@ -346,7 +353,7 @@ git commit -m "My First Commit" // The commit command saves the version with a m
 Now go to Github and create a new repo. After you give it a name, copy the line that looks like this and paste it in your terminal: 
 
 ```js
-git remote add origin github.com/thedivtagguy/activity1.git // This is connecting your local copy to this Github repository
+git remote set-url origin github.com/thedivtagguy/activity1.git // This is connecting your local copy to this Github repository
 ```
 --
 Finally, write this and press Enter: 
@@ -357,7 +364,7 @@ git push -u -f origin master
 
 # Netlify and Chill
 
-To host our website, we'll use a service called Netlify. It is a static site hosting service, which means as long as our website doesn't have a database, we can host it for free, forever.
+To host our website, we'll use a service called Netlify. It is a static site hosting service, which means as long as our website doesn't have a database, we can host it for free.
 
 1. Go to [Netlify.com](https://netlify.com) and login with your Github account
 
@@ -422,7 +429,6 @@ Its got frogs. Lets play.
 
 ![](images/frog.png)
 
-&lt;p style="font-size: 10px"&gt;&lt;i&gt; Gururaja has entered the chat &lt;/i&gt;&lt;/p&gt;
 
 ```
 flexboxfroggy.com

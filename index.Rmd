@@ -240,7 +240,7 @@ In development, its used to collaborate between teams. This works in the followi
 
 --
 
-3. If me and you are working on the same fork, it is better to create two copies of it and work on things separately. This is called a **branch**.
+3. If me and you are working on the same fork, it is better to create two copies of what we're working on and develop on things separately. Each copy here is called a **branch**.
 
 --
 
@@ -324,7 +324,7 @@ Open up a new terminal in VS Code. Type in the following code:
 ```js
 git init // This initializes a new git repository on your machine
 
-git add -A // Every time you want to save a new version, you have to add all files to this verion
+git add -A // Every time you want to save a new version, you have to add all files to this version
 
 git commit -m "My First Commit" // The commit command saves the version with a message to help you keep track of things
 ```
@@ -332,7 +332,7 @@ git commit -m "My First Commit" // The commit command saves the version with a m
 Now go to Github and create a new repo. After you give it a name, copy the line that looks like this and paste it in your terminal: 
 
 ```js
-git remote add origin github.com/thedivtagguy/activity1.git // This is connecting your local copy to this Github repository
+git remote set-url origin github.com/thedivtagguy/activity1.git // This is connecting your local copy to this Github repository
 ```
 --
 Finally, write this and press Enter: 
@@ -343,7 +343,7 @@ git push -u -f origin master
 
 # Netlify and Chill
 
-To host our website, we'll use a service called Netlify. It is a static site hosting service, which means as long as our website doesn't have a database, we can host it for free, forever.
+To host our website, we'll use a service called Netlify. It is a static site hosting service, which means as long as our website doesn't have a database, we can host it for free.
 
 1. Go to [Netlify.com](https://netlify.com) and login with your Github account
 
@@ -408,7 +408,6 @@ Its got frogs. Lets play.
 
 ![](images/frog.png)
 
-<p style="font-size: 10px"><i> Gururaja has entered the chat </i></p>
 
 ```
 flexboxfroggy.com
