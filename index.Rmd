@@ -3,6 +3,7 @@ title: "Web Dev Interest Group"
 subtitle: "< Session 1 />"
 author: "Aman Bhargava"
 date: "2022/04/24"
+base: "https://mellifluous-crumble-4fde67.netlify.app/"
 output:
   xaringan::moon_reader:
     lib_dir: libs
